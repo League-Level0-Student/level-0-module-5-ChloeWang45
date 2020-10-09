@@ -25,6 +25,7 @@ public class GoofyNames {
 		for(int i = 0; i < num; i++) {
 			String a = name.substring(c, c + 1);
 			c = c + 1;
+			System.out.println(a.toUpperCase());
 		}
 		
 			// 5. Use MODULO to set this variable to upper case for EVEN characters
