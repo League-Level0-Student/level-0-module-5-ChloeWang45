@@ -1,10 +1,11 @@
 
 void setup() {
     size(1000, 500);
+    background(#D1D1D1);
 }
-
+int x = 750;
 void draw() {
-  
+ 
   // Go to the recipe to run the demonstration before starting this program
   
   /*
@@ -19,23 +20,27 @@ void draw() {
     a = a - 20;
     if(i % 2 == 0){
       noFill();
-      ellipse(250, 250, a, a);
+      ellipse(x + 10, 250, a, a);
+      x = x += 10;
     }
     else{
       noFill();
-      ellipse(250, 250, a, a);
+      ellipse(x + 10, 250, a, a);
+      x = x += 10;
     }
-  
+   
    int b = 400;
   for(int j = 0; j < 20; j++){
     b = b - 20;
     if(j % 2 == 0){
       noFill();
-      ellipse(750, 250, b, b);
+      ellipse(x - 10, 250, b, b);
+      x = x -= 10;
     }
     else{
       noFill();
-      ellipse(750, 250, b, b);
+      ellipse(x - 10, 250, b, b);
+      x = x -= 10;
     }
     
   }
